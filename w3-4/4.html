@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .header img{
+            position: relative;
+            right: -1400px;
+        }
+
+
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px;
+        }
+
+        .main{
+            display: grid;
+            grid-template-areas: "aside content";
+            gap:12px;
+        }
+
+        .header{
+            /* position: fixed; */
+            position: sticky;
+            top: 0;
+            height: 60px;
+            background-color:palevioletred;
+        }
+
+        .main .sidebar{
+            grid-area: aside;
+        }
+
+        .content p::first-letter{
+            font-size: 28px;
+            color:darkblue;
+        }
+
+        .footer-distributed {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+
+        .box{
+            display: flex;
+            height: 200px;
+            justify-content: space-around;
+            /* flex-wrap: wrap; */
+
+
+        }
+
+        .box img{
+            flex-wrap: wrap;
+            width: 200px;
+            height: 200px;
+            margin: 10px 0;
+        }
+
+
+        body {
+            padding: 24px;
+            display: grid;
+            place-content: center;
+            background-color:blanchedalmond
+        }
+  
+
+        h1{
+            color:darkblue;
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+        * {
+        font-family: Roboto;
+        }
+
+        section {
+            width: 100%;
+            display: inline-block;
+            background: #ccc;
+            height: 60vh;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .footer-distributed {
+            background-color:darkviolet;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: normal 16px sans-serif;
+            padding: 10px 50px;
+        }
+
+        .footer-distributed .footer-left p {
+            color: #8f9296;
+            font-size: 14px;
+            margin: 0;
+        }
+        /* Footer links */
+
+        .footer-distributed p.footer-links {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0 0 10px;
+            padding: 0;
+            transition: ease .25s;
+        }
+
+        .footer-distributed p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+        }
+
+        .footer-distributed .footer-links a:before {
+            content: "·";
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+
+        .footer-distributed .footer-right {
+            float: right;
+            margin-top: 6px;
+            max-width: 180px;
+        }
+
+        .footer-distributed .footer-right a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color:#8f9296;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 3px;
+            transition:all .25s;
+        }
+
+        .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+        .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+        /* Media Queries */
+
+        @media (max-width: 600px) {
+            .footer-distributed .footer-left, .footer-distributed .footer-right {
+                text-align: center;
+            }
+            .footer-distributed .footer-right {
+                float: none;
+                margin: 0 auto 20px;
+            }
+            .footer-distributed .footer-left p.footer-links {
+                line-height: 1.8;
+            }
+        }
+
+   
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Ice Cream</h1>
+        
+    </header>
+
+    <main class="main">
+
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#first">О нас</a></li>
+                <li><a href="#second">Мороженое</a></li>
+                <li><a href="#third">Интересные факты</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <article id="first">
+                <h2>О нас</h2>
+                <p>Шин-Лайн - отличная команда с активным воображением, жаждой инноваций и опытом. Динамичная компания, которая выдержала испытание временем, настоящая национальная гордость. Лидер рынка мороженого, любимая марка каждого третьего казахстанца, предлагает 140 наименований натуральных продуктов мирового качества.</p>
+                <img src="" alt="">
+            </article>
+
+            
+            <div class="box">
+                <img class="first" src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/ice-cream-photography-10.jpg" alt="icecream1">
+                <img class="second" src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/ice-cream-phoography4.jpg" alt="icecream2">
+                <img class="third" src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/ice-cream-photography9.jpg" alt="icecream3">
+                <img class="fourth" src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/ice-cream-photography-1.jpg" alt="icecream4">
+                <img class="fifth" src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/ice-cream-photography-12.jpg" alt="icecream5">
+            </div>
+           
+
+            <article id="second">
+                <h2>Мороженое</h2>
+                <p>Мороженое — прекрасное лакомство, особенно желанное в жаркий летний день. Некогда оно было изысканным дефицитом, доступным только королям — приготовить его было не так-то просто, а сохранить без ещё не изобретённых в те годы холодильников и вовсе невозможно. К счастью, развитие технологий сделало мороженое доступным лакомством для всех нас.</p>
+                <p>
+                    Во вкусовых качествах мороженого, наверное, не сомневается никто. Но знаешь ли ты, что мороженое полезно? Она способно не только поднять настроение, а еще и позитивно влияет на желудок и повышает иммунитет!
+                    Мороженое — источник полезных веществ. Оно содержит витамины:
+                    <ol>
+                        <li>А — полезный для иммунитета;</li>
+                        <li>В1 и В2 — необходимые для желудка и нервной системы;</li>
+                        <li>Е — для волос и здоровья кожи;</li>
+                        <li>D — является активным участником обмена веществ.</li>
+        
+                    </ol>
+                </p>
+            </article>
+
+            <article id="third">
+                <h2>Интересные факты</h2>
+                <p>Такое вкусное, такое полезное!</p>
+                <ul>
+                    <li>Японские ученые рекомендуют перед завтраком съедать несколько ложек мороженого. Холодное мороженое помогает скорее проснуться, отлично стимулирует роботу мозга и повышает работоспособность!</li>
+                    <li>Лондонские ученые доказали: мороженое улучшает настроение. Проведя эксперимент, они выяснили, что достаточно съесть одну ложку любимой холодной вкуснятины — и настроение поднимется. Как? Мороженое отлично стимулирует выработку специального гормона счастья — серотонина. Поэтому не удивительно, что стрессовые ситуации люди «заедают» мороженым.</li>
+                    <li>Для того, чтобы закалить горло и сделать его более стойким к низким температурам, ученые советуют кушать больше мороженого. Такая профилактика снижает риск развития болезней горла.</li>
+                    <li>Йогуртовое мороженое полезно для желудка. Именно оно содержит бифидобактерии, которые улучшают моторику и микрофлору кишечника, позитивно влияют на иммунную систему.</li>
+                    <li>Хестон Блюменталь — шеф-повар из Великобритании, который попал в Книгу рекордов Гиннесса. Именно он создал самое большое в мире мороженое— высотой 4 метра и тонной веса. На его заморозку пошло больше месяца, но результат удивил всех! Интересно, сколько бы времени ушло на то, чтобы его съесть?</li>
+                </ul>
+            </article>
+        </div>
+
+
+    </main>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p>Company Name &copy; 2015</p>
+        </div>
+
+    </footer>
+      
+    
+</body>
+</html>

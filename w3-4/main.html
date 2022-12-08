@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The health food store</title>
+
+    <link rel="stylesheet" href="main3.css">
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+  
+        td, th {
+          border: 1px solid #3c0338;
+          text-align: left;
+          padding: 8px;
+        }
+  
+        tr:nth-child(even) {
+          background-color: #b0ecba;
+        }
+  
+        header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          /* position: fixed; */
+        }
+  
+        html {
+          scroll-behavior: smooth;
+        }
+
+        h1{
+            color:darkslateblue
+        }
+
+        hr{
+            color:black;
+        }
+
+        p:last-child::first-letter{
+            font-size: 28px;
+            color:darkblue;
+        }
+        #ol {
+            background: #ff9999;
+            padding: 20px;
+        }
+
+        #ol li {
+            background: #ffe5e5;
+            color: darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <img src="https://avatars.mds.yandex.net/get-marketcms/1534436/img-f38c15d2-b011-4769-9967-56939342cadb.jpeg/optimize" alt="Fruits and vegetables" height = "300" width="100%">
+    <nav style = "color:blueviolet;" class="navigation">
+        <ul>
+            <li><a href="#info1" class = "link">About us</a></li>
+            <li><a href="#info2" class = "link">About vegetables</a></li>
+            <li><a href="#info3" class = "link">About fruits</a></li>
+            <li><a href="#info4" class = "link">About our products</a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        <hr>
+        <h1 style="text-align: center;">The health food store</h1>
+        <hr>
+        <section class="section">
+            <h1 id = "info1">About us</h1>
+            <p>The Healthfood Store is a family owned and run business. We are proud to be one of Australia's leading natural organic health food stores, providing healthy alternatives for over 20 years! Our mission is to provide the highest quality health products directly to our customers.
+                Our passion for natural health along with our extensive knowledge provide the best possible service, range and value for our customers. As we are an independent and owner operated store we can select and endorse the products which in our experience are effective, manufactured ethically and have well researched formulas and ingredients. Every health product we provide is high in quality and extensively researched. No matter where you are on your journey to optimal health we're here to guide you in your endeavour to health.
+                At The Healthfood Store, we are committed to your health. We want to enable you to live the fullest, healthiest life possible. We are dedicated in providing you with the support, information, and products that you need. Our friendly team are always here for support and to make sure your ordering experience with us is a positive one!
+                We’ll not only guide you and support you with our knowledge and advice, but help you discover your healthiest self.
+            </p>
+        </section>
+
+        <article class = "article">
+            <h1>What are calories and why count them?</h1>
+            <dl>
+                <dt>-What are calories?</dt>
+                <dd>Calories are units of energy contained in food that our body can either use immediately or store in reserve.</dd>
+                <dt>-How are food calories measured?</dt>
+                <dd>Today, products are not heated, but burned in a special chamber, measuring the amount of energy they release using a device - a calorimeter. But even more often they are chemically decomposed 
+                    into proteins, fats and carbohydrates, their specific gravity and total caloric content are considered.
+                </dd>
+            </dl>
+        </article>
+
+        <section>
+            <h1 id = "info2">The number of calories in vegetables</h1>
+            <p>Vegetables contain many useful and nutritious substances necessary for our body, as well as in order to keep ourselves in good shape. They are useful for many reasons, because they can be found in a lot of vitamins and mineral components.
+                Let's look at the some vegetable calorie table!
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food</th>
+                        <th>Serving</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zucchini</td>
+                        <td>1 zucchini (196 g)</td>
+                        <td>33 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Tomato</td>
+                        <td>1 tomato (111 g)</td>
+                        <td>20 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Potato</td>
+                        <td>1 potato (130 g)</td>
+                        <td>112 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Pumpkin</td>
+                        <td>1 pumpkin (196 g)</td>
+                        <td>51 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Onion</td>
+                        <td>1 onion (85 g)</td>
+                        <td>34 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Turnips</td>
+                        <td>1 turnip (122 g)</td>
+                        <td>34 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Cabbage</td>
+                        <td>1 head (908 g)</td>
+                        <td>227 cal</td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Artichoke</td>
+                        <td>1 artichoke (128 g)</td>
+                        <td>60 cal</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <details class="details">
+                <summary>Useful information</summary>
+                <p>Vegetables are the source of many diseases, for example, the consumption of acids, dyes, roughage and other beneficial compounds with bactericidal properties. Vitamins such as beta-carotene or vitamin C found in fruits 
+                    and vegetables are effective antioxidants.Since vegetables contain a lot of water and few energy-rich components, they contain few calories and are stored for a very short time. But there are exceptions, such as potatoes and legumes. 
+                    Thanks to starch, their calorie content is much higher than in other vegetables. Carrots, beets, sweet green peas and cabbage contain sucrose and monosaccharides. It should be remembered that old vegetables already have too much 
+                    dietary fiber and are therefore not suitable for juices and salads.
+                    If you eat vegetables at least 5 times a day, then your body will be more resistant to various diseases. In addition, it has a positive effect on overall well-being. Unfortunately, the human body cannot accumulate useful vitamins and other elements. 
+                    As an example, consider vitamin C. It is found in many natural foods and is well absorbed. To maintain the required level of vitamin C in the body, one must constantly take care of the use of foods containing this vitamin,
+                    such as peppers, broccoli, spinach, parsley, dill, Brussels sprouts, etc.
+                    Almost all vegetables need to be stored in the refrigerator. The exception is unripe vegetables, because at room temperature they will become a little more ripe. 
+                    Also, long-term storage products, such as potatoes and beets, are not required to be stored in the refrigerator, but it is desirable. The most comfortable place in the refrigerator for vegetables is the bottom drawer. 
+                    Many of them can be safely stored there for up to 1 month. But most vegetables are better to use during the week. If you freeze or buy frozen vegetables, then be calm, 
+                    because they remain tasty and healthy for a very long time – up to one year. Canned vegetables should be stored in a cool dark place, the optimal temperature should be below 15 degrees.
+                </p>
+            </details>
+
+        </section>
+
+
+        <section class = "section">
+            <h1 id = "info3">The number of calories in fruits</h1>
+            <p>Fruits and vegetables contain a lot of water, fiber, vitamins, minerals and bioactive compounds, but they are low in fat; they provide relatively little energy, so they help keep body weight under control.
+                Let's look at the some fruit calorie table!
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food</th>
+                        <th>Serving</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple</td>
+                        <td>1 apple (182 g)</td>
+                        <td>95 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>1 banana (125 g)</td>
+                        <td>111 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Avocado</td>
+                        <td>1 avocado (200 g)</td>
+                        <td>320 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Grapes</td>
+                        <td>1 cup (151 g)</td>
+                        <td>104 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Kiwi</td>
+                        <td>1 kiwi (183 g)</td>
+                        <td>112 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Mango</td>
+                        <td>1 mango (336 g)</td>
+                        <td>202 cal</td>
+                    </tr>
+                    <tr>
+                        <td>Olives</td>
+                        <td>1 olive (2.7 g)	</td>
+                        <td>2 cal</td>
+                    </tr> 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Orange</td>
+                        <td>1 orange (131 g)</td>
+                        <td>62 cal</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <details class="details">
+                <summary>Useful information</summary>
+        
+                <p>
+                    Fruits have little energy value and a lot of water, so it is advisable to consume them at least 5 times a day. The presence of elements such as potassium and calcium makes it possible to attribute fruits to the alkaline group of products.
+                    Lemon acid is caused by the presence of organic acids, but they do not form acid.Jam and confiture are usually made from fresh fruit, but unfortunately, most of the fruit vitamins are lost during their preparation. However, 
+                    the energy value of such products remains high due to the large amount of sugar. Confitures of industrial production contain preservatives.Not everyone knows that, among other things, vegetables and fruits are a natural cure for sclerosis and cancer. 
+                    Ascorbic acid must be in the daily diet, because our body cannot accumulate it. Since different vegetables contain different vitamins, you need to make sure that you have all the necessary fruits in your diet. Even though the energy value of fruits is quite low, excessive consumption of some of them can have an unimportant effect on health.
+                    For example, eating more than the recommended amount of bananas can lead to weight gain.
+                </p>
+            </details>
+
+        </section>
+
+        <hr>
+
+        <section class = "section">
+            <h1 id = "info4">About our products</h1>
+            <img src="https://ecogolik.ru/upload/iblock/eb3/organicheskie_ovoschi_i_frukti_1-_1_.jpg" alt="fruits" height="225" width="300">
+            <p>Our range of health products includes an array of 
+                <ol id = "ol">
+                    <li>fruits</li>
+                    <li>vegetable</li>
+                    <li>berries</li>
+                    <li>vitamins</li>
+                    <li>natural supplements</li>
+                    <li>cold and flu remedies</li>
+                    <li>aids for digestion</li>
+                    <li>natural pain relief</li>
+                    <li>stress relief</li>
+                </ol>
+                and much more.
+            </p>
+        </section>
+
+    </main>
+    
+    
+    <footer class="footer">
+        <hr>
+        <p>Posted by: Leila Bekturgan</p>
+        <p>
+            To order, subscribe to our page and write to direct: <a href="index.html" class="link">instagram</a>
+        </p>
+    </footer>
+    
+</body>
+</html>

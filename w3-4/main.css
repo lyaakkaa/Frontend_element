@@ -1,0 +1,23 @@
+body {
+    padding: 24px;
+    display: grid;
+    place-content: center;
+    background-color:blanchedalmond
+}
+  
+label {
+    display: block;
+    padding-top: 16px;
+}
+  
+input {
+    width: unset;
+}
+
+h1{
+    color:darkblue;
+}
+
+
+
+

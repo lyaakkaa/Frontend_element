@@ -1,0 +1,40 @@
+details p:first-child::first-line{
+    color:deepskyblue;
+}
+
+
+details p:last-child::first-letter{
+    font-size: 28px;
+    color:darkblue;
+}
+
+
+.link:hover{       
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+.active-link{
+    color: blueviolet;
+}
+
+body {
+    padding: 24px;
+    display: grid;
+    place-content: center;
+    background-color:beige
+}
+
+footer{
+    padding: 24px;
+    display: grid;
+    background-color:beige
+}
+
+
+.section article:target h1{
+    color:dodgerblue;
+    border: 1px solid currentColor;
+}
