@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+
+:root{
+    /* Colors */
+    --primary:#00B0D7;
+    --accent: #ff6060;
+    --dark:#001B2F;
+    --light:#fff;
+    --display_light: #fafafa;
+    --display_dark: #00223A;
+    --buttom_light:#E9F6FF;
+    --buttom_dark:#001B2F;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+
+}
+/* Calculator */
+.calculator {
+    width:320px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+
+/* CSS-свойство box-shadow добавляет тень к элементу.  */
+.calc-display {
+    padding: 20px 24px;
+    padding-bottom: 44px;
+    margin-bottom: -24px;
+    background-color: var(--display_light);
+    text-align: right;
+}
+.calc-history {
+    font-size: 24px;
+    height: 33px;
+}
+.calc-history strong{
+    font-weight: 400;
+    color:var(--accent);
+}
+.calc-total {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    height: 42px;
+}
+.calc-buttoms {
+    border-radius: 20px;
+    background-color: var(--buttom_light);
+    padding: 16px;
+    padding-bottom: 32px;
+    font-size: 24px;
+}
+
+.calc_rows {
+    display: flex;
+    justify-content: space-between;
+}
+.calc_col {
+    --size: 64px;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.calc_col img{
+    pointer-events: none;
+}
+
+.calc_col_reset{
+    color: var(--accent);
+
+}
+
+.cacl_col_buttom{
+    color: var(--primary);
+}
+
+/* Calculator dark theme */
+.calculator_dark{
+    color: var(--light);
+}
+
+.calculator_dark .calc-display {
+    background-color: var(--display_dark);
+}
+
+.calculator_dark .calc-buttoms{
+    background-color: var(--buttom_dark);
+
+}

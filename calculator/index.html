@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator calculator_dark">
+        <div class="calc-display">
+            <div class="calc-history">
+            </div>
+            <div class="calc-total">0</div>
+        </div>
+        <div class="calc-buttoms">
+            <div class="calc_rows">
+                <div class="calc_col calc_col_reset" data-type="clear">C</div>
+                <div class="calc_col cacl_col_buttom" data-type="%">%</div>
+                <div class="calc_col cacl_col_buttom" data-type="delete">⌫</div>
+                <div class="calc_col cacl_col_buttom" data-type="/">÷</div>
+            </div>
+            <div class="calc_rows">
+                <div class="calc_col" data-type="7">7</div>
+                <div class="calc_col" data-type="8">8</div>
+                <div class="calc_col" data-type="9">9</div>
+                <div class="calc_col cacl_col_buttom" data-type="*">×</div>
+            </div>
+            <div class="calc_rows">
+                <div class="calc_col" data-type="4">4</div>
+                <div class="calc_col" data-type="5">5</div>
+                <div class="calc_col" data-type="6">6</div>
+                <div class="calc_col cacl_col_buttom" data-type="-">-</div>
+            </div>
+            <div class="calc_rows">
+                <div class="calc_col" data-type="1">1</div>
+                <div class="calc_col" data-type="2">2</div>
+                <div class="calc_col" data-type="3">3</div>
+                <div class="calc_col cacl_col_buttom" data-type="+">+</div>
+            </div>
+            <div class="calc_rows">
+                <div class="calc_col" data-type="float">.</div>
+                <div class="calc_col" data-type="0">0</div>
+                <div class="calc_col cacl_col_buttom" data-type="history">
+                    <img src="files\history.svg" alt="history">
+                </div>
+                <div class="calc_col cacl_col_buttom" data-type="=">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
