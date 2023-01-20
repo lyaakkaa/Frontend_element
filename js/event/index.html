@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        .go {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+        }
+
+        .go.rounded {
+            border-radius: 50%;
+        }
+
+        .go.red {
+            background-color: red;
+        }
+
+        .go.bold {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .go.remove {
+            opacity: 0;
+        }
+
+        .go.add {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+<!--    <button id="one">Click me</button>-->
+<!--    <button id="two">Click me 2</button>-->
+
+    <div class="go">Go</div>
+
+    <script defer src="index.js"></script>
+</body>
+</html>
