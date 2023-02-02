@@ -50,7 +50,6 @@ async function populate(){
     await video.play();
 }
 
-// блюр
 function censor(boundingBox) {
     faceCanvasCtx.imageSmoothingEnabled = false;
 
@@ -60,13 +59,12 @@ function censor(boundingBox) {
     faceCanvasCtx.drawImage(
         // 5 source args
         video, // where does the source come from?
-        boundingBox.x, // where do we start the source pull from?
-        boundingBox.y,
-        boundingBox.width,
-        boundingBox.height,
+        0, // where do we start the source pull from?
+        0,
+        video.width, video.height,
         // 4 draw args
-        boundingBox.x, // where should we start drawing the x and y?
-        boundingBox.y,
+        0, // where should we start drawing the x and y?
+        0,
         SIZE,
         SIZE
     )
@@ -75,21 +73,19 @@ function censor(boundingBox) {
     const width = boundingBox.width * SCALE;
     const height = boundingBox.height * SCALE;
     faceCanvasCtx.drawImage(
-        faceCanvas, // source
-        boundingBox.x, // where do we start the source pull from?
-        boundingBox.y,
+        videoCanvas, // source
+        0, // where do we start the source pull from?
+        0,
         SIZE,
         SIZE,
         //drawing args
-        boundingBox.x,
-        boundingBox.y,
+        0,
+        0,
         width,
         height
     );
 }
 
-
-// Квадратик рисует
 function draw({boundingBox}){
     const {left, top, width, height} = boundingBox;
     videoCanvasCtx.lineWidth = 2;
