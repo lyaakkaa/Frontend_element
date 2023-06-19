@@ -1,0 +1,7 @@
+Для начала 
+npm init -y
+npm i -D webpack webpack-cli
+
+npx webpack
+
+npm i -D webpack-dev-server

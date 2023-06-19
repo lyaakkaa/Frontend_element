@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  button {
+    font: inherit;
+    border: 1px solid #000053;
+    color: white;
+    background: #000053;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover,
+  button:active {
+    background: #12128a;
+    border-color: #12128a;
+  }
+  
+  label,
+  input,
+  textarea {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    font: inherit;
+    padding: 0.15rem 0.25rem;
+    border: 1px solid #ccc;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #000053;
+  }
+  
+  section {
+    width: 40rem;
+    max-width: 90%;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+  }
+  
+  .form-control {
+    margin: 0.5rem 0;
+  }
+  
+  .posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .post-item {
+    margin: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+  }
+  
+  .post-item h2,
+  .post-item p {
+    margin: 0.5rem 0;
+  }
+  
+  .post-item h2 {
+    font-size: 1.5rem;
+    color: #414141;
+  }
+  
+  .post-item button {
+    border-color: #61ee0a;
+    background: #61ee0a;
+  }
+  
+  .post-item button:hover,
+  .post-item button:active {
+    border-color: #1feb11;
+    background:  #1feb11;
+  }
+
+
+
+  #modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  #modalContent {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #closeModal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #closeModal:hover,
+  #closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
